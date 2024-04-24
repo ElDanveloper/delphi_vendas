@@ -1,0 +1,24 @@
+object ServiceConexao: TServiceConexao
+  Height = 328
+  Width = 432
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'Database=database'
+      'User_Name=root'
+      'Password=masterkey'
+      'Server=localhost'
+      'DriverID=MySQL')
+    Left = 80
+    Top = 48
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'Forms'
+    Left = 264
+    Top = 48
+  end
+  object FDPhysMySQLDriverLink1: TFDPhysMySQLDriverLink
+    VendorLib = 'C:\Users\odann\OneDrive\Desktop\Faculdade\libmysql.dll'
+    Left = 192
+    Top = 200
+  end
+end

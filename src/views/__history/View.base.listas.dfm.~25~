@@ -1,0 +1,360 @@
+inherited ViewBaseListas: TViewBaseListas
+  Cursor = crHandPoint
+  BorderStyle = bsNone
+  Caption = 'ViewBaseListas'
+  ClientHeight = 550
+  ClientWidth = 1024
+  Position = poMainFormCenter
+  OnMouseDown = pnlTopoMouseDown
+  OnShow = FormShow
+  ExplicitWidth = 1024
+  ExplicitHeight = 550
+  TextHeight = 15
+  object pnlTopo: TPanel
+    Left = 0
+    Top = 0
+    Width = 1024
+    Height = 35
+    Align = alTop
+    BevelOuter = bvNone
+    Color = 5395026
+    ParentBackground = False
+    TabOrder = 0
+    OnMouseDown = pnlTopoMouseDown
+    object lblTitulo: TLabel
+      AlignWithMargins = True
+      Left = 38
+      Top = 3
+      Width = 911
+      Height = 29
+      Cursor = crHandPoint
+      Align = alClient
+      Caption = 'Titulo'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -19
+      Font.Name = 'Segoe UI Semibold'
+      Font.Style = [fsBold]
+      ParentFont = False
+      OnMouseDown = pnlTopoMouseDown
+      ExplicitWidth = 49
+      ExplicitHeight = 25
+    end
+    object pnlIcone: TPanel
+      Left = 0
+      Top = 0
+      Width = 35
+      Height = 35
+      Align = alLeft
+      BevelOuter = bvNone
+      Color = clGreen
+      TabOrder = 0
+      object Image1: TImage
+        Left = 0
+        Top = 0
+        Width = 35
+        Height = 35
+        Align = alClient
+        Picture.Data = {
+          0954506E67496D61676589504E470D0A1A0A0000000D49484452000000200000
+          00200804000000D973B27F0000000467414D410000B18F0BFC61050000000262
+          4B474400FF878FCCBF000000097048597300009D7B00009D7B013C9F77C40000
+          000774494D4507E80411120F0DCD6DB219000002474944415478DADD944B4854
+          6114C77F7746109D104DA94554B4EEB16A11691412411195B4080A212B0B2B1C
+          2890A282169621158CD0639A5E14B513C41E184414686914050A42AD7AC854F8
+          8089AC4067FADFB977E2CEE3DE26DD79860B3367CEF97DFF73BE73AEC134CD98
+          198002D6B1680AB91FE862C204CCE31915C4FE33BD84615633640216D04D84AB
+          F8F32E28C1247BA8A78A8F29400B4F68A0284FC04F2E51CD5127A09938213AF9
+          9E5491D0C7F8ABC7FC952E7E13417C1C4F0760399221A50418E1979D308B3247
+          FA28E5CEF86C4080DDEC5453FB39A7B248FA1B54B3657E89BFC9732F409013DC
+          61900D2C661BAFE40FB38CDB7669B5BCE5343D6E804A5DE663B5322CF9F3850A
+          D3247F444FBDAD20A25E35BB0356EA8C6ED538AA1625341F118987CBEAF8535B
+          C11A1DD0E20EA8E20BEDCCA191A8606D9CA555FECDACB7EFC4BC8D2E95D5E3D5
+          836A8DD418EF04E897F0A8FC356CD4D89ED7B7432CE41EAFBD0106CBD5BC52DE
+          732B996E013EE94EE0B03AF39097DE806CABD18DC4ED127C3CF897023780653E
+          1ED1E70638C9563EE758A8F4418E2BBE5DB1598071AE6B4127F258A502CDE92E
+          8AD30167B8AB5605324ECB6D063FB8CF768E3801BD1A1073031378BFE6ACFFCD
+          C8B5AC4801CA35FB4B24A9846F7ACC7D73B7D97A621AB5984A1E600723D66915
+          1452C77EB66806FD9A7FC3F5FC56ED651B1D5CE406BFD53347E8018E0910547D
+          7B3D145C519F42029CE242AA2129ABD3EE0DEBD5718D831E8090F06352BC4F0A
+          320073352EC512F982371E80A5AC52CEB806FA6B26608A3603007F007B5AD921
+          3ECD2E1C0000002574455874646174653A63726561746500323032342D30342D
+          31375431383A31353A31332B30303A3030DEE3F7BA0000002574455874646174
+          653A6D6F6469667900323032342D30342D31375431383A31353A31332B30303A
+          3030AFBE4F060000002074455874736F6674776172650068747470733A2F2F69
+          6D6167656D616769636B2E6F7267BCCF1D9D00000018744558745468756D623A
+          3A446F63756D656E743A3A50616765730031A7FFBB2F00000018744558745468
+          756D623A3A496D6167653A3A486569676874003531328F8D5381000000177445
+          58745468756D623A3A496D6167653A3A5769647468003531321C7C03DC000000
+          19744558745468756D623A3A4D696D657479706500696D6167652F706E673FB2
+          564E00000017744558745468756D623A3A4D54696D6500313731333337373731
+          33C408915A00000012744558745468756D623A3A53697A6500373234334242F0
+          97503E00000063744558745468756D623A3A5552490066696C653A2F2F2E2F75
+          706C6F6164732F35362F414833563862432F343230322F66696E616E63655F62
+          616E6B5F7365637572655F73656375726974795F736166655F7661756C745F69
+          636F6E5F3236323736382E706E67F3313D890000000049454E44AE426082}
+        OnMouseDown = pnlTopoMouseDown
+        ExplicitLeft = 16
+        ExplicitTop = 16
+        ExplicitWidth = 105
+        ExplicitHeight = 105
+      end
+    end
+    object pnlFechar: TPanel
+      Left = 952
+      Top = 0
+      Width = 72
+      Height = 35
+      Align = alRight
+      BevelOuter = bvNone
+      TabOrder = 1
+      object btnSair: TSpeedButton
+        Left = 0
+        Top = 0
+        Width = 72
+        Height = 35
+        Cursor = crHandPoint
+        Align = alClient
+        DisabledImageName = 'bntProdutos'
+        Caption = '[ SAIR ]'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 6711039
+        Font.Height = -16
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentFont = False
+        OnClick = btnSairClick
+        ExplicitLeft = 64
+        ExplicitWidth = 121
+      end
+    end
+  end
+  object pnlRodape: TPanel
+    Left = 0
+    Top = 515
+    Width = 1024
+    Height = 35
+    Align = alBottom
+    BevelOuter = bvNone
+    Color = 7105644
+    ParentBackground = False
+    TabOrder = 1
+    object btnNovo: TSpeedButton
+      AlignWithMargins = True
+      Left = 557
+      Top = 3
+      Width = 88
+      Height = 29
+      Cursor = crHandPoint
+      Align = alRight
+      GroupIndex = 1
+      Down = True
+      Caption = '[ Novo ]'
+      Flat = True
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -16
+      Font.Name = 'Segoe UI Semibold'
+      Font.Style = [fsBold]
+      ParentFont = False
+      OnClick = btnNovoClick
+      ExplicitLeft = 552
+      ExplicitTop = 0
+      ExplicitHeight = 35
+    end
+    object btnEditar: TSpeedButton
+      AlignWithMargins = True
+      Left = 651
+      Top = 3
+      Width = 88
+      Height = 29
+      Cursor = crHandPoint
+      Align = alRight
+      GroupIndex = 1
+      Caption = '[ Editar ]'
+      Flat = True
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -16
+      Font.Name = 'Segoe UI Semibold'
+      Font.Style = [fsBold]
+      ParentFont = False
+      OnClick = btnEditarClick
+      ExplicitLeft = 583
+    end
+    object btnCancelar: TSpeedButton
+      AlignWithMargins = True
+      Left = 745
+      Top = 3
+      Width = 88
+      Height = 29
+      Cursor = crHandPoint
+      Align = alRight
+      GroupIndex = 1
+      Caption = '[ Cancelar ]'
+      Flat = True
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -16
+      Font.Name = 'Segoe UI Semibold'
+      Font.Style = [fsBold]
+      ParentFont = False
+      OnClick = btnCancelarClick
+      ExplicitLeft = 568
+    end
+    object btnSalvar: TSpeedButton
+      AlignWithMargins = True
+      Left = 839
+      Top = 3
+      Width = 88
+      Height = 29
+      Cursor = crHandPoint
+      Align = alRight
+      GroupIndex = 1
+      Caption = '[ Salvar ]'
+      Flat = True
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -16
+      Font.Name = 'Segoe UI Semibold'
+      Font.Style = [fsBold]
+      ParentFont = False
+      OnClick = btnSalvarClick
+      ExplicitLeft = 552
+    end
+    object btnExcluir: TSpeedButton
+      AlignWithMargins = True
+      Left = 933
+      Top = 3
+      Width = 88
+      Height = 29
+      Cursor = crHandPoint
+      Align = alRight
+      GroupIndex = 1
+      Caption = '[ Excluir ]'
+      Flat = True
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -16
+      Font.Name = 'Segoe UI Semibold'
+      Font.Style = [fsBold]
+      ParentFont = False
+      ExplicitLeft = 568
+    end
+  end
+  object pnlLinhaFundo: TPanel
+    Left = 0
+    Top = 35
+    Width = 1024
+    Height = 480
+    Align = alClient
+    BevelOuter = bvNone
+    Color = 7105644
+    ParentBackground = False
+    TabOrder = 2
+    object CardPanel_List: TCardPanel
+      AlignWithMargins = True
+      Left = 1
+      Top = 1
+      Width = 1022
+      Height = 479
+      Margins.Left = 1
+      Margins.Top = 1
+      Margins.Right = 1
+      Margins.Bottom = 0
+      Align = alClient
+      ActiveCard = Card_Pesquisa
+      BevelOuter = bvNone
+      Color = clWhite
+      ParentBackground = False
+      TabOrder = 0
+      OnCardChange = CardPanel_ListCardChange
+      object Card_Pesquisa: TCard
+        Left = 0
+        Top = 0
+        Width = 1022
+        Height = 479
+        Caption = 'Card1'
+        CardIndex = 0
+        Color = clWhite
+        ParentBackground = False
+        TabOrder = 0
+        object pnlTItuloPesquisa: TPanel
+          Left = 0
+          Top = 0
+          Width = 1022
+          Height = 80
+          Align = alTop
+          BevelOuter = bvNone
+          Color = 12171191
+          ParentBackground = False
+          TabOrder = 0
+          object lblTituloPesquisa: TLabel
+            Left = 34
+            Top = 5
+            Width = 80
+            Height = 30
+            Caption = 'Pesquisa'
+            Color = 12105912
+            Font.Charset = ANSI_CHARSET
+            Font.Color = 7500402
+            Font.Height = -21
+            Font.Name = 'Segoe UI Semilight'
+            Font.Style = []
+            ParentColor = False
+            ParentFont = False
+          end
+          object edtPesquisa: TSearchBox
+            Left = 34
+            Top = 41
+            Width = 153
+            Height = 29
+            Font.Charset = ANSI_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -16
+            Font.Name = 'Segoe UI Semilight'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 0
+            TextHint = 'Procurar'
+          end
+        end
+        object DBG_dados: TDBGrid
+          AlignWithMargins = True
+          Left = 5
+          Top = 85
+          Width = 1012
+          Height = 389
+          Margins.Left = 5
+          Margins.Top = 5
+          Margins.Right = 5
+          Margins.Bottom = 5
+          Align = alClient
+          BorderStyle = bsNone
+          DataSource = dsDados
+          Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+          TabOrder = 1
+          TitleFont.Charset = DEFAULT_CHARSET
+          TitleFont.Color = clWindowText
+          TitleFont.Height = -12
+          TitleFont.Name = 'Segoe UI'
+          TitleFont.Style = []
+        end
+      end
+      object Card_Cadastro: TCard
+        Left = 0
+        Top = 0
+        Width = 1022
+        Height = 479
+        Caption = 'Card1'
+        CardIndex = 1
+        TabOrder = 1
+      end
+    end
+  end
+  object dsDados: TDataSource
+    Left = 537
+    Top = 164
+  end
+end

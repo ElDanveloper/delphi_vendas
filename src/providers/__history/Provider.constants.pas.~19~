@@ -1,0 +1,51 @@
+unit Provider.constants;
+
+interface
+
+procedure Get_Pessoas(ITIPO: integer);
+procedure Get_Produtos;
+procedure Get_Produtos_detalhe(ICOD_PRODUTO: integer);
+
+
+var
+ ICOD_FILIAL: integer;
+ sRAZAO_FILIAL: string;
+
+
+implementation
+
+uses
+ Service.cadastro;
+ // procedure para buscar clientes, ,funcionarios
+procedure Get_Pessoas(ITIPO: integer);
+begin
+ ServiceCadastro.QRY_pessoas.Close;
+ ServiceCadastro.QRY_pessoas.SQL.Clear;
+ ServiceCadastro.QRY_pessoas.SQL.add('select * from pessoas where pes_tipopessoa = :tipopessoa');
+ ServiceCadastro.QRY_pessoas.SQL.add('order by pes_codigo asc');
+ ServiceCadastro.QRY_pessoas.Params[0].AsInteger := ITIPO;
+ ServiceCadastro.QRY_pessoas.Open();
+end;
+
+procedure Get_Produtos;
+begin   //busca todos os produtos
+
+ ServiceCadastro.QRY_produto1.Close;
+ ServiceCadastro.QRY_produto1.SQL.Clear;
+// ServiceCadastro.QRY_produto1.SQL.add('select * from produto1 order by pr1_codigo');
+ ServiceCadastro.QRY_produto1.Open();
+
+end;
+
+procedure Get_Produtos_detalhe(ICOD_PRODUTO: integer);
+begin  // busca apenas o detalhe de um produto
+
+ ServiceCadastro.QRY_produto2.Close;
+ ServiceCadastro.QRY_produto2.SQL.Clear;
+ ServiceCadastro.QRY_produto2.SQL.add('select * from produto2 where pr2_codigopr1 = :codigo');
+ ServiceCadastro.QRY_produto2.Params[0].AsInteger := ICOD_PRODUTO;
+ ServiceCadastro.QRY_produto2.Open();
+
+end;
+
+end.
